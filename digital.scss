@@ -1,0 +1,58 @@
+
+.Digital {
+
+  font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+  font-size: 8rem;
+
+  //display: flex;
+  //flex: 1;
+  margin: auto;
+
+  text-align: center;
+
+  white-space: nowrap;
+
+  .value {
+    //flex: 1;
+    //justify-content: center;
+    //align-content: center;
+    //display: flex;
+    //margin: auto;
+
+    display: inline-block;
+    color: #FE0001;
+
+    transition: opacity 1s;
+  }
+
+  .hours {
+
+  }
+
+  .minutes {
+
+  }
+
+  .separator {
+    display: inline-block;
+    color: #FE0001;
+padding: 0 .5rem;
+opacity: 0; 
+ }
+
+
+  .separator {	
+    &.on {
+      //opacity: .1;
+    }
+    &.off {
+      //opacity: .4;
+    }
+  }
+
+
+  .seconds {
+    display: none;
+  }
+
+}

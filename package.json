@@ -1,0 +1,56 @@
+{
+  "name": "clock",
+  "version": "1.0.0",
+  "keywords": [],
+  "author": "szh",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/z5171092/clock"
+  },
+  "bugs": {
+    "url": "https://github.com/z5171092/clock"
+  },
+  "homepage": "https://github.com/z5171092/clock",
+  "scripts": {
+    "start": "node server.js",
+    "build": "cross-env NODE_ENV=production webpack --config webpack.config.prod.js",
+    "deploy": "npm run build && surge demo react-digital-clock.surge.sh",
+    "lint": "eslint src"
+  },
+  "dependencies": {
+    "babel-polyfill": "^6.9.1",
+    "color": "^0.11.3",
+    "es6-promise": "^3.2.1",
+    "history": "^3.0.0",
+    "moment": "^2.14.1",
+    "normalize.css": "^4.2.0",
+    "react": "^15.3.0",
+    "react-dom": "^15.3.0"
+  },
+  "devDependencies": {
+    "autoprefixer": "^6.3.7",
+    "babel-cli": "^6.11.4",
+    "babel-core": "^6.11.4",
+    "babel-loader": "^6.2.4",
+    "babel-preset-es2015": "^6.9.0",
+    "babel-preset-react": "^6.11.1",
+    "babel-preset-react-hmre": "^1.1.1",
+    "cross-env": "^2.0.0",
+    "css-loader": "^0.23.1",
+    "express": "^4.14.0",
+    "live-server": "^1.0.0",
+    "mocha": "^3.0.0",
+    "postcss": "^5.1.1",
+    "postcss-loader": "^0.9.1",
+    "precss": "^1.4.0",
+    "react-addons-test-utils": "^15.3.0",
+    "rimraf": "^2.5.4",
+    "style-loader": "^0.13.1",
+    "surge": "^0.18.0",
+    "webpack": "^1.13.1",
+    "webpack-dev-middleware": "^1.6.1",
+    "webpack-dev-server": "^1.14.1",
+    "webpack-hot-middleware": "^2.12.2"
+  }
+}
